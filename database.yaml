@@ -1,0 +1,58 @@
+users:
+  New User:
+    username: New User
+    articleIds:
+      - 1
+      - 2
+    commentIds:
+      - 1
+      - 2
+      - 3
+articles:
+  '1':
+    id: 1
+    title: things
+    url: article.com
+    username: New User
+    commentIds:
+      - 1
+    upvotedBy: []
+    downvotedBy: []
+    comments: []
+  '2':
+    id: 2
+    title: This is a completely different thing!
+    url: anotherthing.com
+    username: New User
+    commentIds:
+      - 2
+      - 3
+    upvotedBy: []
+    downvotedBy: []
+    comments: []
+nextArticleId: 3
+comments:
+  '1':
+    id: 1
+    body: I am commenting!
+    username: New User
+    articleId: 1
+    upvotedBy: []
+    downvotedBy: []
+  '2':
+    id: 2
+    body: First!
+    username: New User
+    articleId: 2
+    upvotedBy:
+      - New User
+    downvotedBy: []
+  '3':
+    id: 3
+    body: Second!
+    username: New User
+    articleId: 2
+    upvotedBy: []
+    downvotedBy:
+      - New User
+nextCommentId: 4
